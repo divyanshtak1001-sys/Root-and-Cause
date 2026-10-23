@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --background: #080c14;
+  --foreground: #f1f5f9;
+  --card: #0d1527;
+  --card-foreground: #f1f5f9;
+  --popover: #0d1527;
+  --popover-foreground: #f1f5f9;
+  --primary: #06b6d4;
+  --primary-foreground: #080c14;
+  --secondary: #13223f;
+  --secondary-foreground: #e2e8f0;
+  --muted: #0f1c33;
+  --muted-foreground: #94a3b8;
+  --accent: #1e3a5f;
+  --accent-foreground: #f8fafc;
+  --destructive: #ef4444;
+  --destructive-foreground: #f8fafc;
+  --border: #1a2a47;
+  --input: #1a2a47;
+  --ring: #06b6d4;
+  --radius: 0.5rem;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* Entry animation — used on pages, modals, and cards throughout the app */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.35s ease-out both;
+}
+
+/* Slow spin variant for diagnostic icons */
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spinSlow 3s linear infinite;
+}
+
+/* Glow pulse for live-status badges */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(6,182,212,0.4); }
+  50%       { box-shadow: 0 0 0 6px rgba(6,182,212,0); }
+}
+.animate-glow-pulse {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+/* Custom scrollbars for high-density SOC data views */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080c14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}

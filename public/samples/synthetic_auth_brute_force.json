@@ -1,0 +1,62 @@
+[
+  {
+    "event_id": "evt_bf_1001",
+    "timestamp": "2026-10-21T14:00:00.000Z",
+    "event_type": "AUTH_LOGIN",
+    "username": "analyst01",
+    "source_ip": "198.51.100.42",
+    "host": "vpn-gateway-01",
+    "result": "FAILURE",
+    "details": "Invalid password attempt 1"
+  },
+  {
+    "event_id": "evt_bf_1002",
+    "timestamp": "2026-10-21T14:02:10.000Z",
+    "event_type": "AUTH_LOGIN",
+    "username": "analyst01",
+    "source_ip": "198.51.100.42",
+    "host": "vpn-gateway-01",
+    "result": "FAILURE",
+    "details": "Invalid password attempt 2"
+  },
+  {
+    "event_id": "evt_bf_1003",
+    "timestamp": "2026-10-21T14:04:15.000Z",
+    "event_type": "AUTH_LOGIN",
+    "username": "analyst01",
+    "source_ip": "198.51.100.42",
+    "host": "vpn-gateway-01",
+    "result": "FAILURE",
+    "details": "Invalid password attempt 3"
+  },
+  {
+    "event_id": "evt_bf_1004",
+    "timestamp": "2026-10-21T14:06:20.000Z",
+    "event_type": "AUTH_LOGIN",
+    "username": "analyst01",
+    "source_ip": "198.51.100.42",
+    "host": "vpn-gateway-01",
+    "result": "FAILURE",
+    "details": "Invalid password attempt 4"
+  },
+  {
+    "event_id": "evt_bf_1005",
+    "timestamp": "2026-10-21T14:08:45.000Z",
+    "event_type": "AUTH_LOGIN",
+    "username": "analyst01",
+    "source_ip": "198.51.100.42",
+    "host": "vpn-gateway-01",
+    "result": "SUCCESS",
+    "details": "Session established after repeated failures"
+  },
+  {
+    "event_id": "evt_bf_1006",
+    "timestamp": "2026-10-21T14:15:30.000Z",
+    "event_type": "DATA_EXPORT_CUSTOMER_RECORDS",
+    "username": "analyst01",
+    "source_ip": "198.51.100.42",
+    "host": "db-customer-prod-02",
+    "result": "SUCCESS",
+    "details": "High volume table dump: 25000 records"
+  }
+]
