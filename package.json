@@ -11,6 +11,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "@amazon-devices/amazon-devices-buildertools-mcp": "^1.0.17",
     "@google/genai": "^2.30.0",
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.118.0",
@@ -25,7 +26,6 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
-    "@amazon-devices/amazon-devices-buildertools-mcp": "^1.0.17",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^24.19.2",
     "@types/papaparse": "^5.5.2",

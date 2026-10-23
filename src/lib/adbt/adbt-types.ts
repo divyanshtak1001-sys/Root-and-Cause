@@ -11,6 +11,7 @@ export type AdbtToolName =
 export interface AdbtDocument {
   name: string;
   description: string;
+  documentType?: string;
 }
 
 export interface AdbtSearchResult {
